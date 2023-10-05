@@ -1,0 +1,30 @@
+$font-regular: 'Alegreya', serif;
+$base-color: rgba(0, 128, 0, 0.2);
+
+@media screen and (orientation: portrait) {
+    .extended-menu {
+        display: none;
+    }
+}
+
+body {
+    text-align: center;
+    font-family: $font-regular;
+    background-color: rgb(216, 216, 216);
+}
+
+header {
+    position: fixed;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    box-shadow: 0px 10px 13px -7px $base-color, 5px 5px 15px 5px rgba(0,0,0,0);
+}
