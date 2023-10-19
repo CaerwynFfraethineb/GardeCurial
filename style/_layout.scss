@@ -1,0 +1,84 @@
+$width-sm: 540px;
+$width-md: 720px;
+$width-lg: 960px;
+$width-xl: 1140px;
+$width-xxl: 1320px;
+
+@media (max-width: $width-xl) {
+    .menu-bar {
+        display: none;
+    }
+}
+
+@media (min-width: $width-xl) {
+    .menu-dropdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $width-sm) {
+    .navbar-logo {
+        width: 40%;
+        height: auto;
+    }
+    .menu-dropdown {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: $width-md) {
+    .navbar-logo {
+        width: 40%;
+        height: auto;
+    }
+    .menu-dropdown {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: $width-lg) {
+    .navbar-logo {
+        width: 40%;
+        height: auto;
+    }
+    .menu-dropdown {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: $width-xl) {
+    .navbar-logo {
+        width: 30%;
+        height: auto;
+    }
+    .menu-bar {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: $width-xxl) {
+    .navbar-logo {
+        width: 30%;
+        height: auto;
+    }
+    .menu-bar {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+h1,
+.menu-dropdown {
+    margin-top: auto;
+    margin-bottom: auto;
+}

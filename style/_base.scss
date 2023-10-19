@@ -1,20 +1,21 @@
 $font-regular: 'Alegreya', serif;
-$base-color: rgba(0, 128, 0, 0.2);
-
-@media screen and (orientation: portrait) {
-    .extended-menu {
-        display: none;
-    }
-}
+$base-color: rgb(81, 81, 81);
+$back-color: rgb(216, 216, 216);
+$green-color: rgb(6, 126, 44);
+$red-color: rgb(157, 0, 0);
 
 body {
     text-align: center;
     font-family: $font-regular;
-    background-color: rgb(216, 216, 216);
+    background-color: $back-color;
 }
 
 header {
-    position: fixed;
+    position: sticky;
+}
+
+main {
+    overflow: auto;
 }
 
 li {
@@ -25,6 +26,26 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    box-shadow: 0px 10px 13px -7px $base-color, 5px 5px 15px 5px rgba(0,0,0,0);
+
+
+.menu-bar > a:hover,
+.menu-bar > a:active {
+    color: lighten($base-color, 30)
+}
+
+a:visited,
+a:link {
+    color: $base-color;
+}
+
+#title-left {
+    color: $green-color;
+}
+
+#title-right {
+    color: $red-color;
+}
+
+.ma-classe-image {
+    transform: scaleX(-1);
 }
